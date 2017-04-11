@@ -4,6 +4,8 @@ Can listen to github webhooks and do one of two things: execute a script or a gi
 
 It consists of a PHP component which can be called through the web and parses the payload provided by github and a bash component which actually executes the hook scripts.
 
+The script parses the field `repository->name` from the supplied payload which is used to determine which deploy script to execute. Deploy scripts are searched for in `/usr/lib/github-hook-processor/<repo-name>.sh`.
+
 ## Setup
 
 To generally install the script-set on your system you would just clone the project into a location reachable through you webserver like:
