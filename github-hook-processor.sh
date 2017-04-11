@@ -17,5 +17,5 @@ if [[ -x "${SCRIPT_PATH}" ]] ; then
 		"${SCRIPT_PATH}"
 	fi
 else
-	die "Cannot find script ${SCRIPT_PATH}"
+	die "Cannot find script ${SCRIPT_PATH} or not executeable!"
 fi
