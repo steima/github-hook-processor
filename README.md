@@ -22,4 +22,6 @@ bash /var/www/github-hook-processor/install.sh
 
 ## Root Privileges
 
-In many cases the scripts found in `/usr/lib/github-hook-processor/` will need to be run with root privileges. If this is required you must have [sudo](https://www.sudo.ws/download.html) installed on your system. 
+In many cases the scripts found in `/usr/lib/github-hook-processor/` will need to be run with root privileges. If this is required you must have [sudo](https://www.sudo.ws/download.html) installed on your system.
+
+If sudo is present we will try to execute the deploy script through sudo. This means that once sudo is installed a valid configuration for each of your deploy scripts must be presente in `/etc/sudoers`. It is strongly advised to refrain to setup wildcard permissions for the user running the webserver!
