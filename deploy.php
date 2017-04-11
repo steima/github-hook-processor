@@ -5,7 +5,7 @@ $entityBody = file_get_contents('php://input');
 
 $githubHook = json_decode($entityBody);
 if(isset($githubHook)) {
-	$repoName = $githubHook['repository']['name'];
+	$repoName = $githubHook->repository->name;
 	shell_exec('/usr/local/bin/github-hook-processor.sh ' . $repoName);
 }
 
