@@ -20,7 +20,7 @@ Afther that make sure that all files are in their respective location by issuing
 bash /var/www/github-hook-processor/install.sh
 ```
 
-## Github confiuration
+## Github configuration
 
 In Github navigate to `Settings > Webhooks` to create a new webhook. Point the **Payload URL** the URL where your `deploy.php` file can be reached. And configure the **Content type** with `application/json`. For now the optional field **Secret** is not used.
 
