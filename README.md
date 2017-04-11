@@ -20,6 +20,10 @@ Afther that make sure that all files are in their respective location by issuing
 bash /var/www/github-hook-processor/install.sh
 ```
 
+## Github confiuration
+
+In Github navigate to `Settings > Webhooks` to create a new webhook. Point the **Payload URL** the URL where your `deploy.php` file can be reached. And configure the **Content type** with `application/json`. For now the optional field **Secret** is not used.
+
 ## Root Privileges
 
 In many cases the scripts found in `/usr/lib/github-hook-processor/` will need to be run with root privileges. If this is required you must have [sudo](https://www.sudo.ws/download.html) installed on your system.
