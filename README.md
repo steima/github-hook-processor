@@ -21,3 +21,5 @@ bash /var/www/github-hook-processor/install.sh
 ```
 
 ## Root Privileges
+
+In many cases the scripts found in `/usr/lib/github-hook-processor/` will need to be run with root privileges. If this is required you must have [sudo](https://www.sudo.ws/download.html) installed on your system. 
