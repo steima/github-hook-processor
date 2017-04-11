@@ -11,7 +11,7 @@ REPO_NAME="${1}"
 SCRIPT_PATH="/usr/lib/github-hook-processor/${REPO_NAME}.sh"
 
 if [[ -x "${SCRIPT_PATH}" ]] ; then
-	if [[ -x "/usr/bin/sudo" ]] && grep -q "${SCRIPT_PATH}" /etc/sudoers ; then
+	if [[ -x "/usr/bin/sudo" ]] ; then
 		/usr/bin/sudo "${SCRIPT_PATH}"
 	else
 		"${SCRIPT_PATH}"
