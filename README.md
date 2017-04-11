@@ -19,3 +19,5 @@ Afther that make sure that all files are in their respective location by issuing
 ```
 bash /var/www/github-hook-processor/install.sh
 ```
+
+## Root Privileges
